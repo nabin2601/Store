@@ -2,7 +2,7 @@
 import '../toggleSidebar.js';
 import '../cart/toggleCart.js';
 import '../cart/setupCart.js';
-
+import '../../indexpage/navlink.js';
 //  filter imports
 import setupSearch from '../filters/search.js';
 import setupCompanies from '../filters/companies.js';
@@ -12,3 +12,11 @@ import setupPrice from '../filters/price.js';
 import { store } from '../store.js';
 import display from '../displayProducts.js';
 import { getElement } from '../utils.js';
+
+const laoding = getElement('.page-loading');
+
+display(store, getElement('.products-container'));
+
+setupSearch(store);
+
+laoding.style.display = 'none';

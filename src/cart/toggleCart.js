@@ -1,6 +1,8 @@
 import { getElement } from '../utils.js';
 
-export const openCart = () => {};
+export const openCart = () => {
+  cartOverlay.classList.add('show');
+};
 
 const cartOverlay = getElement('.cart-overlay');
 const cartClose = getElement('.cart-close');
