@@ -20,4 +20,6 @@ display(store, getElement('.products-container'));
 setupSearch(store);
 
 setupCompanies(store);
+
+setupPrice(store);
 laoding.style.display = 'none';
