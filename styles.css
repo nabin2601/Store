@@ -728,6 +728,9 @@ Single Product Page
   background: var(--clr-grey-10);
   color: var(--clr-grey-5);
 }
+.breadCrump{
+  color:var(--clr-grey-5);
+}
 .page-hero-title {
   font-weight: 500;
 }
