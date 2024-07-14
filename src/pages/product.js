@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             <p class="single-product-desc">
             ${description}
             </p>
-            <button class="addToCartBtn btn" data-id="id">
+            <button class="addToCartBtn btn" data-id="${id}">
               add to cart
             </button>
           </div>
