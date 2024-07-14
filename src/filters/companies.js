@@ -25,7 +25,7 @@ const setupCompanies = (store) => {
         );
         // console.log(newStore);
       }
-      display(newStore, getElement('.products-container'));
+      display(newStore, getElement('.products-container'), true);
     }
   });
 };

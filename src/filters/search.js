@@ -14,14 +14,14 @@ const setupSearch = (product) => {
             return store;
           }
         });
-        display(newStore, getElement('.products-container'));
+        display(newStore, getElement('.products-container'), true);
         if (newStore.length < 1) {
           getElement('.products-container').innerHTML = `
               <h3 class="filter-error">Sorry, there is no item to display in your search </h3>
             `;
         }
       } else {
-        display(product, getElement('.products-container'));
+        display(product, getElement('.products-container'), true);
       }
     });
 };

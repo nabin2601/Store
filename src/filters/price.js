@@ -19,7 +19,7 @@ const setupPrice = (store) => {
     priceValue.textContent = `Price Value: $${value}`;
     let newStore = [];
     newStore = store.filter((product) => product.price / 100 <= value);
-    display(newStore, getElement('.products-container'));
+    display(newStore, getElement('.products-container'), true);
     if (newStore.length < 1) {
       getElement('.products-container').innerHTML = `
           <h3 class="filter-error">Sorry, there are no item to display in your search </h3>
